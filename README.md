@@ -10,11 +10,11 @@ Word Count Algorithm will show the words in a sentence and number of times it ha
 
 ## 4. Send data to the input topic topic1 using the kafka producer
 
-bin/kafka-console-producer.sh --broker-list localhost:9092 --topic topic1  Hola Hola Hello
+> bin/kafka-console-producer.sh --broker-list localhost:9092 --topic topic1  Hola Hola Hello
 
 ## 5. Consume data from the output topic topic2 using the kafka consumer
 
-bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 \
+> bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 \
 >     --topic topic2 \
 >     --from-beginning \
 >     --formatter kafka.tools.DefaultMessageFormatter \
