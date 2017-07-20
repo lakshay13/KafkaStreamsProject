@@ -10,7 +10,10 @@ Word Count Algorithm will show the words in a sentence and number of times it ha
 
   ### Send data to the input topic topic1 using the kafka producer
 
-  > bin/kafka-console-producer.sh --broker-list localhost:9092 --topic topic1  Hola Hola Hello
+  > bin/kafka-console-producer.sh --broker-list localhost:9092 --topic topic1 <br/>
+   Hola<br/>
+   Hola<br/>
+   Hello<br/>
 
   ### Consume data from the output topic topic2 using the kafka consumer
 
@@ -31,7 +34,7 @@ Word Count Algorithm will show the words in a sentence and number of times it ha
 ## 3b.Start User Region Program &
 
   ### Send data to the input topic topic1 using the kafka producer
-  > bin/kafka-console-producer.sh --broker-list localhost:9092 --topic UserRegions --property parse.key=true --property key.separator=,
+  > bin/kafka-console-producer.sh --broker-list localhost:9092 --topic UserRegions --property parse.key=true --property key.separator=, <br/>
   >    lakshay,India<ENTER><br/>
   >    ankit,India<ENTER><br/>
   >    manan,India<ENTER><br/>
