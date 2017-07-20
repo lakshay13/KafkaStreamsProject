@@ -1,6 +1,7 @@
-# kafka Stream Word Count Application
+# kafka Stream Word Count & User Region Count Application
 
-Word Count Algorithm will show the words in a sentence and number of times it have occurred.
+Word Count Algorithm will show the words in a sentence and number of times it have occurred while User Region Algorithm will show the regions and number
+of times they have occurred (atleast 2 times, all regions whose occurrence is less than 2 are not displayed)
 
 ## 1. Start zookeeper and then kafka.
 
