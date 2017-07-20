@@ -32,12 +32,12 @@ Word Count Algorithm will show the words in a sentence and number of times it ha
 
   ### Send data to the input topic topic1 using the kafka producer
   > bin/kafka-console-producer.sh --broker-list localhost:9092 --topic UserRegions --property parse.key=true --property key.separator=,
-  >    lakshay,India<ENTER>
-  >    ankit,India<ENTER>
-  >    manan,India<ENTER>
-  >    karna,India<ENTER>
-  >    Jack,England<ENTER>
-  >    paanshul,India<ENTER>
+  >    lakshay,India<ENTER><br/>
+  >    ankit,India<ENTER><br/>
+  >    manan,India<ENTER><br/>
+  >    karna,India<ENTER><br/>
+  >    Jack,England<ENTER><br/>
+  >    paanshul,India<ENTER><br/>
 
   ### Consume data from the output topic topic2 using the kafka consumer
 
