@@ -57,7 +57,9 @@ public class UserRegionStream {
 
         // Aggregate the user count by region
         KTable<String, Long> regionCounts = userRegions
-                .groupBy((userId, region) -> KeyValue.pair(region, region)) // returns a key value pair
+                // intention is to group by key userId where user id will be region (from key value pair). We do
+                // not care about the value it can be anything. Grouping is done based on key
+                .groupBy((userId, region) -> KeyValue.pair(region, region))
                 .count("CountsByRegion")
                 .filter((regionName, count) -> count >= 2); // filter only those regions with 2 or more user
 
