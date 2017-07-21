@@ -11,14 +11,14 @@ of times they have occurred (atleast 2 times, all regions whose occurrence is le
 
   ### Send data to the input topic topic1 using the kafka producer
 
-  > bin/kafka-console-producer.sh --broker-list localhost:9092 --topic topic1 <br/>
+  > ./kafka-console-producer.sh --broker-list localhost:9092 --topic topic1 <br/>
    Hola<br/>
    Hola<br/>
    Hello<br/>
 
   ### Consume data from the output topic topic2 using the kafka consumer
 
-  > bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 \
+  > ./kafka-console-consumer.sh --bootstrap-server localhost:9092 \
   >     --topic topic2 \
   >     --from-beginning \
   >     --formatter kafka.tools.DefaultMessageFormatter \
@@ -35,7 +35,7 @@ of times they have occurred (atleast 2 times, all regions whose occurrence is le
 ## 3b.Start User Region Program &
 
   ### Send data to the input topic topic1 using the kafka producer
-  > bin/kafka-console-producer.sh --broker-list localhost:9092 --topic UserRegions --property parse.key=true --property key.separator=, <br/>
+  > ./kafka-console-producer.sh --broker-list localhost:9092 --topic topic1 --property parse.key=true --property key.separator=, <br/>
   >    lakshay,India<ENTER><br/>
   >    ankit,India<ENTER><br/>
   >    manan,India<ENTER><br/>
@@ -45,7 +45,7 @@ of times they have occurred (atleast 2 times, all regions whose occurrence is le
 
   ### Consume data from the output topic topic2 using the kafka consumer
 
-  > bin/kafka-console-consumer --topic LargeRegions --from-beginning \
+  > ./kafka-console-consumer.sh --topic topic2 --from-beginning \
   >       --zookeeper localhost:2181 \
   >       --property print.key=true \
   >       --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
