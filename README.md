@@ -58,12 +58,12 @@
 
   ### Send data to the input topic topic1 using the kafka producer
     > ./kafka-console-producer.sh --broker-list localhost:9092 --topic topic1
-    >    lakshay<br/>
-    >    lakshay<br/>
-    >    lakshay<br/>
-    >    johnson<br/>
-    >    johnson<br/>
-    >    morkel<br/>
+    >    lakshay
+    >    lakshay
+    >    lakshay
+    >    johnson
+    >    johnson
+    >    morkel
 
   ### Consume data from the output topic topic2 using the kafka consumer
     > ./kafka-console-consumer.sh --topic topic2 --from-beginning --new-consumer --bootstrap-server localhost:9092
