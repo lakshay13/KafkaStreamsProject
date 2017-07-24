@@ -1,8 +1,8 @@
 # kafka Stream Word Count, User Region Count & Anomaly Detection Application
 
-  > Word Count Algorithm will show the words in a sentence and number of times it have occurred.
-  > User Region Algorithm will show the regions and number of times they have occurred (atleast 2 times, all regions whose occurrence is less than 2 are not displayed).
-  > Anomaly Detection algo will detect and print the names of the user if the user has accessed 3 times or more within a windowed time of 1 minute.
+  > Word Count Algorithm will show the words in a sentence and number of times it have occurred.<br/>
+  > User Region Algorithm will show the regions and number of times they have occurred (atleast 2 times, all regions whose occurrence is less than 2 are not displayed).<br/>
+  > Anomaly Detection algo will detect and print the names of the user if the user has accessed 3 times or more within a windowed time of 1 minute.<br/>
 
 ## 1. Start zookeeper and then kafka.
 
